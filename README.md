@@ -57,8 +57,8 @@ This repository is structured as follows:
 
 Install [Go](https://golang.org/) 1.15.x and run:
 ```bash
-go get -d github.com/retroplasma/flyover-reverse-engineering/...
-cd "$(go env GOPATH)/src/github.com/retroplasma/flyover-reverse-engineering"
+go get -d github.com/minglinlu/flyover-reverse-engineering/
+cd "$(go env GOPATH)/src/github.com/minglinlu/flyover-reverse-engineering"
 ```
 
 Then edit [config.json](config.json):

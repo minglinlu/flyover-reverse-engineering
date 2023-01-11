@@ -49,7 +49,7 @@ func GetAltitudeManifest(cache mps.Cache, rm mps.ResourceManifest) (am AltitudeM
 	}
 	if !cache.Enabled || os.IsNotExist(err) {
 		// from url
-		if rawAm, err = web.Get(rm.CacheBaseUrl + "xml/" + altitudeFile); err != nil {
+		if rawAm, err = web.Get("https://gspe21-ssl.ls.apple.com/xml/" + altitudeFile); err != nil {
 			return
 		}
 		if cache.Enabled {
