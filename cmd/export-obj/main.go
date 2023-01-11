@@ -355,6 +355,7 @@ func (ctx context) get(url string) ([]byte, error) {
 
 func get(url string) (data []byte, err error) {
 	jpgErr := errors.New("received jpeg")
+	fmt.Printf("url[%s]\n", url)
 	data, err = web.GetWithCheck(url, func(res *http.Response) (err error) {
 		// fail early if there's a jpeg, which is sometimes sent if there's no c3m(m)
 		if res.Header.Get("content-type") == "image/jpeg" {
